@@ -8,14 +8,15 @@ except ImportError:
 
 setup(
     name='logster',
-    version='0.0.1',
+    version='1.0.1',
     description='Parse log files, generate metrics for Graphite and Ganglia',
     author='Etsy',
     url='https://github.com/etsy/logster',
     packages=[
         'logster',
         'logster/parsers',
-        'logster/tailers'
+        'logster/tailers',
+        'logster/outputs'
     ],
     install_requires = [
         'pygtail>=0.5.1'
